@@ -20,7 +20,6 @@ import {
 } from '../actions/todoAction';
 import Loader from './loader';
 import {
-  TODO_COMPLETE_RESET,
   TODO_DELETE_RESET,
   TODO_INCOMPLETE_RESET,
   TODO_UPDATE_RESET,

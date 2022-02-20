@@ -30,8 +30,8 @@ export const userRegister = asyncHandler(async (req, res) => {
       const token = jwt.sign({ id: user._id }, process.env.EMAIL_SECRET, {
         expiresIn: '1d',
       });
-       const url = `http://localhost:4000/api/users/verification/${token}`;       //localhost
-      // const url = `${process.env.PROD_SERVER}/api/users/verification/${token}`;
+       // const url = `http://localhost:4000/api/users/verification/${token}`;       //localhost
+       const url = `${process.env.PROD_SERVER}/api/users/verification/${token}`;
 
       const emailSent = await transporter.sendMail({
         from: process.env.EMAIL,

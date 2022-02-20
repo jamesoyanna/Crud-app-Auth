@@ -14,7 +14,7 @@ import {
   RESET_PASSWORD_FAIL,
   RESET_PASSWORD_REQUEST,
 } from '../constants/userConstanst';
-import { baseURL } from '../shared/baseURL';
+// import { baseURL } from '../shared/baseURL';
 import {axiosInstance} from '../config';
 
 export const registerUser = (email, password) => async (dispatch) => {
