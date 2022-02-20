@@ -30,8 +30,8 @@ export const userRegister = asyncHandler(async (req, res) => {
       const token = jwt.sign({ id: user._id }, process.env.EMAIL_SECRET, {
         expiresIn: '1d',
       });
-        // const url = `http://localhost:4000/api/users/verification/${token}`;       //localhost
-        const url = `https://crud-app-login.herokuapp.com/api/users/verification/${token}`;       //localhost
+         const url = `http://localhost:4000/api/users/verification/${token}`;       //localhost
+        //const url = `https://crud-app-login.herokuapp.com/api/users/verification/${token}`;       //localhost
        //const url = `${process.env.PROD_SERVER}/api/users/verification/${token}`;
 
       const emailSent = await transporter.sendMail({
@@ -112,8 +112,8 @@ export const getResetPasswordLink = asyncHandler(async (req, res) => {
   const user = await User.findOne({ email: email });
   if (user) {
     const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
+      host: process.env.host,
+      port: process.env.port,
       secure: true,
       auth: {
         user: process.env.EMAIL,
