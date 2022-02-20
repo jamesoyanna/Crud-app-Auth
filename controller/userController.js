@@ -30,8 +30,9 @@ export const userRegister = asyncHandler(async (req, res) => {
       const token = jwt.sign({ id: user._id }, process.env.EMAIL_SECRET, {
         expiresIn: '1d',
       });
-       // const url = `http://localhost:4000/api/users/verification/${token}`;       //localhost
-       const url = `${process.env.PROD_SERVER}/api/users/verification/${token}`;
+        // const url = `http://localhost:4000/api/users/verification/${token}`;       //localhost
+        const url = `https://crud-app-login.herokuapp.com/api/users/verification/${token}`;       //localhost
+       //const url = `${process.env.PROD_SERVER}/api/users/verification/${token}`;
 
       const emailSent = await transporter.sendMail({
         from: process.env.EMAIL,
@@ -128,7 +129,7 @@ export const getResetPasswordLink = asyncHandler(async (req, res) => {
     const url = `${process.env.PROD_CLIENT}/createNewPassword/${token}`;
 
     const emailSent = await transporter.sendMail({
-      from: 'littlebitprogrammer@gmail.com',
+      from: 'james@gmail.com',
       to: email,
       subject: 'Reset Password',
       text: 'Reset your password for React ToDo app.',
