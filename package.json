@@ -1,0 +1,29 @@
+{
+  "name": "email-sending",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.15.0"
+  },
+  "description": "Login system with crud operation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "James oyanna",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.15",
+    "nodemon": "^2.0.6"
+  }
+}
