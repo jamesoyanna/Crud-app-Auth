@@ -1,5 +1,6 @@
 import express from 'express';
 const router = express.Router();
+
 import {
   addNewTodo,
   getAllTodo,
@@ -9,7 +10,7 @@ import {
   editTodo,
 } from '../controller/todoController.js';
 import { protect } from '../middleware/authMiddleware.js';
-
+// Todo Routes
 router.route('/').get(protect, getAllTodo).post(protect, addNewTodo);
 router.route('/:id').delete(protect, deleteTodo).put(protect, editTodo);
 router.route('/:id/complete').put(protect, completeTodo);
