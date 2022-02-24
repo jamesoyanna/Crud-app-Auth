@@ -7,10 +7,10 @@ This project is a fullstack CRUD application with login authentication and email
 -Create an Account.
 - Login system
 - Create a task.
--Update a task
--Delete a task
--Complete a task
--Authentication with jsonwebtoken
+- Update a task
+- Delete a task
+- Complete a task
+- Authentication with jsonwebtoken
 - Email verification
 
 ## Application Functionalities
@@ -28,11 +28,13 @@ OR Create an account with an email. If you are creating an account, you will to 
 ### Pictorial View of the Application
 
 Login Page.
+
 ![login](https://user-images.githubusercontent.com/26815113/155554852-693b31bf-82c0-4aa8-a06a-a89da24e6c12.PNG)
 
 
 
 Dashboard View
+
 ![dashboard](https://user-images.githubusercontent.com/26815113/155554569-5bc11dc0-31e9-441a-a1f9-39b4c6752dfc.PNG)
 
 
@@ -118,15 +120,15 @@ The app will automatically reload if you make changes to any of the source files
 #### Running the Server
 - Open the project folder you cloned. 
 - Create a .env file in the root folder
-Fill in the following credentials:
-PROD_MONGO_URI=
-JWT_SECRET=
-EMAIL_SECRET=
-NODE_ENV=
-PROD_CLIENT=
-PORT=
-EMAIL=
-PASS=
+- Fill in the following credentials:
+- PROD_MONGO_URI=
+- JWT_SECRET=
+- EMAIL_SECRET=
+- NODE_ENV=
+- PROD_CLIENT=
+- PORT=
+- EMAIL=
+- PASS=
 
 Run npm install from your terminal.
 Then run npm start. 
