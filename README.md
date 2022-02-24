@@ -1,28 +1,24 @@
-## Smart Invoice Application
+## CrudApp-with-Login-Auth-system Application
 
 ### About Project
-This project is an easy-to-use fullstack Online Invoicing application for creating and Sending invoices to customers, suiteable for Startups, Business Owners and Freelancers. 
+This project is a fullstack CRUD application with login authentication built with React, Express, Nodejs, Mong0DB.
 
 ## Application Features
--Add Customers or clients.
-- Create a new invoice
-- Compose and quote invoice.
--Authentication using jsonwebtoken
-- Send invoice to customer via Email
-- Download invoice as PDF.
--Record Payment
--Using Signup and Login
--
+-Create an Account.
+- Login system
+- Create a task.
+-Update a task
+-Delete a task
+-Complete a task
+-Authentication with jsonwebtoken
+- Email verification
 
 ## Application Functionalities
-- You firstly add a customer you would want to send an invoice to. 
-Create an invoice to send to the customer. Add the billing information, item description, amount, quantity and discount if any. 
-
-You can also add more items, edit or delete item from your invoice.
-By clicking on the Send Invoice button, you can send invoice via email to the customer. You can also download the invoice as PDF.
+Login to the application with the below credentials.
+OR Create an account with an email. If you are creating an account, you will to check your email to verify your acccount.
 
 
-#### Live view of the application Demo can be found here- [Smart Invoice Landing Page](https://smart-invoice-bc1fb.web.app)
+#### Live view of the application Demo can be found here- [Crud-App-Auth](https://crud-app-auth.netlify.app)
 
 ### Login Credentials: 
 ##### Username: admin@gmail.com, 
@@ -31,21 +27,14 @@ By clicking on the Send Invoice button, you can send invoice via email to the cu
 
 ### Pictorial View of the Application
 
-Landing page display.
+Login Page.
+![login](https://user-images.githubusercontent.com/26815113/155554852-693b31bf-82c0-4aa8-a06a-a89da24e6c12.PNG)
 
-![landing](https://user-images.githubusercontent.com/26815113/154503533-9f7cca66-08fc-48af-b0f3-75ee30821009.PNG)
 
 
 Dashboard View
-![dashboard](https://user-images.githubusercontent.com/26815113/154504072-20652d51-6e73-4915-9f7f-92b476244f01.PNG)
+![dashboard](https://user-images.githubusercontent.com/26815113/155554569-5bc11dc0-31e9-441a-a1f9-39b4c6752dfc.PNG)
 
-
-Sample Invoice Display:
-![Sample-Invoice](https://user-images.githubusercontent.com/26815113/154504540-56b34474-50b5-445f-a493-c1eddfec010b.PNG)
-
-
-Create An Invoice:
-![Create-An-Invoice](https://user-images.githubusercontent.com/26815113/154504951-2743bb4d-cfec-47b0-92f7-6f25ca01bc9d.PNG)
 
 ## How to use the application
 
@@ -69,8 +58,8 @@ The project is built with;
 * [Axios](https://axios-http.com) - Promise based HTTP client for the browser and node.js
 * [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps
 * [React-router](https://reactrouter.com) - Enables the to implementation of dynamic routing in a web app.
-* [Material UI](https://mui.com) -  A library that allows the import and use of different components to create a user interface in React applications.
-* [Apex Charts](https://apexcharts.com/) - An open-source modern charting library that helps to create beautiful and interactive visualizations for web pages.
+* [React Boostrap](https://react-bootstrap.github.io) - Component-based library that provides native Bootstrap components as pure React components.
+* [Redux-Thunk](https://react-bootstrap.github.io) - Component-based library that provides native Bootstrap components as pure React components.
 
 
 ##### Server Side

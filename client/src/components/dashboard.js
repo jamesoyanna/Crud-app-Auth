@@ -133,7 +133,7 @@ const Dashboard = ({ history }) => {
 
   return (
     <Container>
-      <Row className="p-3" style={{ backgroundColor: 'rgb(230 230 230)' }}>
+      <Row className="p-3" style={{ backgroundColor: '#000066', color:'#fff' }}>
         <Col md={11}>
           <h2>WelCome BacK! {userInfo && userInfo.email}</h2>
         </Col>

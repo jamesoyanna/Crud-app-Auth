@@ -34,7 +34,7 @@ const Login = ({ history }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
-                placeholder="demo@example.com"
+                placeholder="admin@gmail.com"
               ></Form.Control>
             </Form.Group>
             <Form.Group>
@@ -43,10 +43,10 @@ const Login = ({ history }) => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
-                placeholder="password"
+                placeholder="admin123"
               ></Form.Control>
             </Form.Group>
-            <Button onClick={loginHandler} className="btn-block btn-warning">
+            <Button onClick={loginHandler} className="btn-block btn-primary">
               Login
             </Button>
           </Form>

@@ -37,7 +37,7 @@ const ForgotPassword = () => {
             </Form.Group>
             <Button
               onClick={getPasswordResetLinkHandler}
-              className="btn-block btn-warning"
+              className="btn-block btn-primary"
             >
               Get Reset Link
             </Button>

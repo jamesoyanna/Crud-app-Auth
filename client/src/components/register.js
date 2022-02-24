@@ -44,7 +44,7 @@ const Register = () => {
                 onChange={(e) => setPassword(e.target.value)}
               ></Form.Control>
             </Form.Group>
-            <Button onClick={registerHandler} className="btn-block btn-warning">
+            <Button onClick={registerHandler} className="btn-block btn-primary">
               Register
             </Button>
           </Form>
