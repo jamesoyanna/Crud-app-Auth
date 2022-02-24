@@ -8,6 +8,7 @@ import {
 } from '../controller/userController.js';
 const router = express.Router();
 
+// User routes
 router.route('/register').post(userRegister);
 router.route('/login').post(userLogin);
 router.route('/verification/:token').get(userEmailVerify);
