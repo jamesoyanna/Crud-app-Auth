@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-// User Models
+// Todo Models
 const TodoSchema = mongoose.Schema(
   {
     title: {
