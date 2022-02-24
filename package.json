@@ -1,10 +1,10 @@
 {
-  "name": "email-sending",
+  "name": "crud-app-auth",
   "version": "1.0.0",
   "engines": {
     "node": "14.15.0"
   },
-  "description": "Login system with crud operation",
+  "description": "Fullstack Crud application with login system and email verification",
   "main": "index.js",
   "type": "module",
   "scripts": {

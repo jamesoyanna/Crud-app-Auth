@@ -1,7 +1,7 @@
 ## CrudApp-with-Login-Auth-system Application
 
 ### About Project
-This project is a fullstack CRUD application with login authentication built with React, Express, Nodejs, Mong0DB.
+This project is a fullstack CRUD application with login authentication and email verification built with React, Express, Nodejs, Mong0DB.
 
 ## Application Features
 -Create an Account.
@@ -59,15 +59,15 @@ The project is built with;
 * [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps
 * [React-router](https://reactrouter.com) - Enables the to implementation of dynamic routing in a web app.
 * [React Boostrap](https://react-bootstrap.github.io) - Component-based library that provides native Bootstrap components as pure React components.
-* [Redux-Thunk](https://react-bootstrap.github.io) - Component-based library that provides native Bootstrap components as pure React components.
+* [Redux-Thunk](https://www.npmjs.com/package/redux-thunk) -A middleware that lets you call action creators that return a function instead of an action object. 
 
 
 ##### Server Side
 * [Express JS](https://expressjs.com/) - flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 * [Bcrypt JS](https://www.npmjs.com/package/bcrypt) - This module enables storing of passwords as hashed passwords instead of plaintext.
-* [HTML-PDF](https://www.npmjs.com/package/html-pdf?activeTab=readme) - HTML to PDF converter that uses phantomjs
+* [Email Validator](https://www.npmjs.com/package/email-validator) - A simple module to validate an e-mail address
 * [Mongoose](https://mongoosejs.com) - Provides a straight-forward, schema-based solution to model application data 
-* [Nodemailer](https://nodemailer.com/about) - A module for Node.js applications to allow easy as cake email sending.
+* [Morgan](https://www.npmjs.com/package/morgan) - A Node.js and Express middleware to log HTTP requests and errors.
 
 * [Node.js](https://nodejs.org/en)- Cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 
@@ -87,7 +87,7 @@ The following tools are required to run this application:
 
 ### Getting the source code
 You can clone the repository directly using this command:
-git clone https://github.com/jamesoyanna/smart-invoice.git
+git clone https://github.com/jamesoyanna/Crud-app-Auth.git
 OR clicking on the code button ontop to clone the application.
 
 ### Installation
@@ -103,9 +103,6 @@ After clonning the application, to run the client application locally, you will 
 Open your terminal and navigate into the client folder using the command:
 cd client
 
-Create a .env file in the root of your client folder and add this:
-REACT_APP_API = http://localhost:4000
-
  Run yarn or npm install from the root of the client folder.
 
 ### Development server
@@ -119,16 +116,17 @@ The app will automatically reload if you make changes to any of the source files
   ```
 
 #### Running the Server
-Open the project folder you cloned. 
-Create a .env file in the root folder
+- Open the project folder you cloned. 
+- Create a .env file in the root folder
 Fill in the following credentials:
-DB_URL = 
-PORT =
-SECRET = 
-SMTP_HOST = 
-SMTP_PORT = 
-SMTP_USER = 
-SMTP_PASS = 
+PROD_MONGO_URI=
+JWT_SECRET=
+EMAIL_SECRET=
+NODE_ENV=
+PROD_CLIENT=
+PORT=
+EMAIL=
+PASS=
 
 Run npm install from your terminal.
 Then run npm start. 
